@@ -5,16 +5,12 @@ public class Main {
 
         SmartArray smartArray = new SmartArray();
 
-        for (int i = 0; i < 1024; i++) {
-            smartArray.add(i + 1);
+        Stack stack = new Stack();
+
+        for (int i = 0; i < 10; i++) {
+            stack.push(i + 1);
         }
 
-        boolean isTrue = true;
-
-        for (int i = 0; i < 1023; i++) {
-            smartArray.remove(1023 - i);
-        }
-
-        smartArray.forEach(System.out::println);
+        stack.forEach(System.out::println);
     }
 }
